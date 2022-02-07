@@ -94,20 +94,35 @@ img {
 .close-icon {
   cursor: pointer;
 }
+
 .navlist-container.open {
   position: absolute;
   top: 0;
   right: -23px;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(81.5485px);
+  background: var(--dark-background);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  animation-name: slide;
+  animation-duration: 1s;
   width: 60%;
   height: 100vh;
+  overflow-x: hidden;
+}
+
+@keyframes slide {
+  from{
+    width: 0%;
+  } to {
+    width: 60%;
+  }
 }
 .navlist-container.open .navlist-items {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-top: 10rem;
+  transition: 0.5s ease-in;
 }
 .navlist-container.open .close-btn {
   position: absolute;
@@ -117,13 +132,10 @@ img {
 }
 .tablet-nav {
   display: none;
-
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(81.5485px);
-  /* background: rgba(255, 255, 255, 0.2);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(8.5px);
--webkit-backdrop-filter: blur(8.5px); */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
 }
 .tablet-navlist-items {
   display: flex;
