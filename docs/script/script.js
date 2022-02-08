@@ -37,8 +37,8 @@ function changeBackground(){
     document.getElementById("background-img").src = "./assets/home/background-home-desktop.jpg";
   }
 }
-
-document.addEventListener("DOMContentLoaded",changeBackground, function () {
+document.addEventListener("DOMContentLoaded",changeBackground)
+document.addEventListener("DOMContentLoaded", function () {
   const selector = ".tablet-navlink";
   const tabLinks = Array.from(document.querySelectorAll(selector));
   const nav = document.querySelector(".tablet-navlist-items");
