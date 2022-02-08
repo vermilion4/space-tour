@@ -26,10 +26,13 @@ closeBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("resize",()=>{
-    if (window.matchMedia("(min-width: 768px)").matches) {
+    if (window.matchMedia("(max-width: 767px)").matches) {
         document.getElementById("background-img").src = "./assets/home/background-home-tablet.jpg";
-      } else {
+      } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
         document.getElementById("background-img").src = "./assets/home/background-home-mobile.jpg";
+      }
+      else{
+        document.getElementById("background-img").src = "./assets/home/background-home-desktop.jpg";
       }
 })
 
