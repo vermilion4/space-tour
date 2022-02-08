@@ -33,9 +33,9 @@ window.addEventListener("resize", changeBackground)
 function changeBackground(){
   if(url === 'index.html' || url === 'index.html#'){
     if (window.matchMedia("(max-width: 767px)").matches) {
-      document.getElementById("background-img").src = "./assets/home/background-home-tablet.jpg";
-    } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
       document.getElementById("background-img").src = "./assets/home/background-home-mobile.jpg";
+    } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
+      document.getElementById("background-img").src = "./assets/home/background-home-tablet.jpg";
     }
     else{
       document.getElementById("background-img").src = "./assets/home/background-home-desktop.jpg";
@@ -43,9 +43,9 @@ function changeBackground(){
   }
   if(url === 'destination-moon.html' || url === 'destination-mars.html' || url === 'destination-europa.html' || url === 'destination-titan.html'){
     if (window.matchMedia("(max-width: 767px)").matches) {
-      document.getElementById("background-img").src = "./assets/destination/background-destination-tablet.jpg";
-    } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
       document.getElementById("background-img").src = "./assets/destination/background-destination-mobile.jpg";
+    } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
+      document.getElementById("background-img").src = "./assets/destination/background-destination-tablet.jpg";
     }
     else{
       document.getElementById("background-img").src = "./assets/destination/background-destination-desktop.jpg";
