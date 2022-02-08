@@ -25,19 +25,20 @@ closeBtn.addEventListener("click", () => {
   }
 });
 
-window.addEventListener("resize",()=>{
-    if (window.matchMedia("(max-width: 767px)").matches) {
-        document.getElementById("background-img").src = "./assets/home/background-home-tablet.jpg";
-      } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
-        document.getElementById("background-img").src = "./assets/home/background-home-mobile.jpg";
-      }
-      else{
-        document.getElementById("background-img").src = "./assets/home/background-home-desktop.jpg";
-      }
-})
+window.addEventListener("resize", changeBackground)
 
+function changeBackground(){
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    document.getElementById("background-img").src = "./assets/home/background-home-tablet.jpg";
+  } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
+    document.getElementById("background-img").src = "./assets/home/background-home-mobile.jpg";
+  }
+  else{
+    document.getElementById("background-img").src = "./assets/home/background-home-desktop.jpg";
+  }
+}
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded",changeBackground, function () {
   const selector = ".tablet-navlink";
   const tabLinks = Array.from(document.querySelectorAll(selector));
   const nav = document.querySelector(".tablet-navlist-items");

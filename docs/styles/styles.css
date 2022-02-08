@@ -273,15 +273,19 @@ img {
     flex-direction: row;
     
   }
+  .main-content-text{
+    width: 70%;
+  }
   .main-content-text-container{
     text-align: left;
     margin-left: 3rem;
+    
   }
   .main-btn-container{
     margin-top: 10%;
   }
   .main{
-    height: 60vh;
+    height: 55vh;
   }
   .main-content > div{
     flex: 50%;
