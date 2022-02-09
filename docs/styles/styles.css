@@ -288,7 +288,7 @@ img {
 
 /* Crew */
 .crew{
-  height: 80vh;
+  margin-top: -5%;
 }
 .crew-img {
   width: 177.12px;
@@ -309,6 +309,7 @@ img {
  margin-top: -0.6rem;
 color: #383b4b;
 }
+
 .crew-details{
   display: grid;
 }
@@ -417,15 +418,12 @@ color: #383b4b;
     margin: 5rem auto 3rem auto;
     width: 80%;
   }
-
-  .crew{
-    margin-top: 250px;
-  }
   .crew-list{
     width: 10%;
     order: 3;
     margin: 4rem auto;
   }
+  
   .crew-desc{
     flex-direction: column-reverse;
   }
@@ -550,14 +548,14 @@ color: #383b4b;
   .avg-distance-box {
     flex: 30%;
   }
-  .destination,
-  .crew {
+  .destination{
     height: 75vh;
   }
-
+  .crew{
+    margin-top: 0;
+  }
   .crew-desc{
     flex-direction: row-reverse;
-    margin-top: 25%;
   }
   .crew-line{
     display: none;
@@ -565,9 +563,7 @@ color: #383b4b;
   .crew-container, .crew-details{
     flex: 50%;
   }
-  .crew-details{
-    margin-top: 10%;
-  }
+ 
   .crew-text{
     text-align: left;
     margin-left: 10%;
@@ -578,10 +574,7 @@ color: #383b4b;
     margin-top: -7%;
     gap: 2rem;
   }
-  .crew-title{
-    position: absolute;
-    width: 100%;
-  }
+  
   .crew-list{
     order: 3;
     margin: 6rem 0 3rem 11%;
@@ -600,7 +593,5 @@ color: #383b4b;
     margin-top: -11%;
     margin-left: 15%;
   }
-  .crew{
-    height: 47vh;
-  }
+ 
 }
