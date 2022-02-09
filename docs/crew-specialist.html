@@ -1,27 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="background">
+      <img
+        src="./assets/crew/background-crew-mobile.jpg"
+        alt="crew-background"
+        id="background-img"
+      />
+    </div>
+    <div class="container">
+      <header class="header">
+        <a href="#" class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            class="logo-icon"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#FFF" />
+              <path
+                fill="#0B0D17"
+                d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+              />
+            </g>
+          </svg>
+        </a>
+        <div class="hamburger">
+          <button class="menu-btn" data-menu-btn>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="21"
+              class="menu-icon"
+            >
+              <g fill="#D0D6F9" fill-rule="evenodd">
+                <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+              </g>
+            </svg>
+          </button>
+          <div class="navlist-container" data-navlist>
+            <button class="close-btn" data-close-btn>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                class="close-icon"
+              >
+                <g fill="#D0D6F9" fill-rule="evenodd">
+                  <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+                  <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+                </g>
+              </svg>
+            </button>
+            <ul class="navlist-items">
+              <li class="navlist">
+                <a class="navlink" href="index.html"
+                  ><span class="list-no">00</span><span>Home</span></a
+                >
+              </li>
+              <li class="navlist">
+                <a class="navlink" href="destination-moon.html"
+                  ><span class="list-no">01</span><span>Destination</span></a
+                >
+              </li>
+              <li class="navlist">
+                <a class="navlink" href="crew-commander.html"
+                  ><span class="list-no">02</span><span>Crew</span></a
+                >
+              </li>
+              <li class="navlist">
+                <a class="navlink" href="technology-vehicle.html"
+                  ><span class="list-no">03</span><span>Technology</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="tablet-nav">
+          <ul class="tablet-navlist-items">
+            <li class="tablet-navlist">
+              <a class="tablet-navlink" href="index.html"
+                ><span class="list-no">00</span>Home</a
+              >
+            </li>
+            <li class="tablet-navlist">
+              <a class="tablet-navlink" href="destination-moon.html"
+                ><span class="list-no">01</span>Destination</a
+              >
+            </li>
+            <li class="tablet-navlist">
+              <a class="tablet-navlink active" href="crew-commander.html"
+                ><span class="list-no">02</span>Crew</a
+              >
+            </li>
+            <li class="tablet-navlist">
+              <a class="tablet-navlink" href="technology-vehicle.html"
+                ><span class="list-no">03</span>Technology</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
 
-  02 Meet your crew
+      <section class="crew">
+        <div class="title crew-title">
+          <h5 class="destination-subhead"><span>02</span>Meet your crew</h5>
+        </div>
+        <div class="crew-desc">
+          <div class="crew-container">
+            <img
+              src="./assets/crew/image-mark-shuttleworth.png"
+              alt="specialist"
+              class="crew-img"
+            />
+          </div>
+          <hr class="crew-line" />
+          <div class="crew-details">
+            <ul class="crew-list">
+              <li class="member">
+                <a href="crew-commander.html"><div class="carousel-dot"></div></a>
+              </li>
+              <li class="member">
+                <a href="crew-specialist.html"><div class="carousel-dot active"></div></a>
+              </li>
+              <li class="member">
+                <a href="crew-pilot.html"><div class="carousel-dot"></div></a>
+              </li>
+              <li class="member">
+                <a href="crew-engineer.html"><div class="carousel-dot"></div></a>
+              </li>
+            </ul>
+            <p class="crew-designation">
+              <span class="position">Mission Specialist</span>
+              <span class="name">Mark Shuttleworth</span>
+            </p>
+            <p class="main-content-text crew-text">
+              Mark Richard Shuttleworth is the founder and CEO of Canonical, the
+              company behind the Linux-based Ubuntu operating system.
+              Shuttleworth became the first South African to travel to space as
+              a space tourist.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
-  Mission Specialist
-  Mark Shuttleworth
-
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist.
-</body>
+    <script src="./script/script.js"></script>
+  </body>
 </html>

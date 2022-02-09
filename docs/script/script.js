@@ -51,6 +51,16 @@ function changeBackground(){
       document.getElementById("background-img").src = "./assets/destination/background-destination-desktop.jpg";
     }
   }
+  if(url === 'crew-commander.html' || url === 'crew-specialist.html' || url === 'crew-engineer.html' || url === 'crew-pilot.html'){
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      document.getElementById("background-img").src = "./assets/crew/background-crew-mobile.jpg";
+    } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
+      document.getElementById("background-img").src = "./assets/crew/background-crew-tablet.jpg";
+    }
+    else{
+      document.getElementById("background-img").src = "./assets/crew/background-crew-desktop.jpg";
+    }
+  }
 
 }
 document.addEventListener("DOMContentLoaded",changeBackground)
