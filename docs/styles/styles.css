@@ -335,15 +335,11 @@ img {
   font-family: var(--font-one), "Roboto", sans-serif;
   font-size: 24px;
 }
-.carousel-dot {
-  cursor: pointer;
-  width: 10px;
-}
 
 .dot.active {
   background: #fff;
 }
-.crew-list a:hover {
+.dot:hover {
   opacity: 50.01%;
 }
 .crew-text {
