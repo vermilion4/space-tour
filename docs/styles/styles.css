@@ -228,7 +228,8 @@ img {
   position: relative;
   z-index: -1;
 }
-.destination-desc, .crew-desc {
+.destination-desc,
+.crew-desc {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,7 +238,8 @@ img {
   width: 170px;
   aspect-ratio: 1/1;
 }
-.planet-list, .crew-list {
+.planet-list,
+.crew-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 70%;
@@ -246,7 +248,8 @@ img {
   padding-left: 0;
   font-family: var(--font-three), "Roboto", sans-serif;
 }
-.planet, .member {
+.planet,
+.member {
   list-style: none;
 }
 .planet a {
@@ -268,7 +271,8 @@ img {
   font-family: var(--font-one), "Roboto", sans-serif;
 }
 
-.planet-line, .crew-line {
+.planet-line,
+.crew-line {
   width: 90%;
   margin-top: 2.5rem;
   color: #383b4b;
@@ -287,62 +291,62 @@ img {
 }
 
 /* Crew */
-.crew{
+.crew {
   margin-top: -5%;
 }
 .crew-img {
   width: 177.12px;
   height: 222px;
 }
-.carousel-dot {
+.dot {
   width: 10px;
   height: 10px;
-  background: var(--text-color);
-  opacity: 17.44%;
+  background: rgba(255, 255, 255, 0.555);
   border-radius: 100%;
-  border: 1px solid #383b4b;
 }
-.crew-list{
+.crew-list {
   width: 20%;
   margin: 2rem auto;
 }
-.crew-line{
- margin-top: -0.6rem;
-color: #383b4b;
+.crew-line {
+  margin-top: -0.6rem;
+  border: 0.5px solid #383b4b;
 }
-
-.crew-details{
+.crew-desc{
+  margin-top: 15%;
+}
+.crew-details {
   display: grid;
 }
-.crew-designation{
+.crew-designation {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.position{
+.position {
   text-transform: uppercase;
   font-family: var(--font-one), "Roboto", sans-serif;
   font-size: var(--nav-text-size);
   opacity: 49.51%;
   z-index: -1;
 }
-.name{
+.name {
   text-transform: uppercase;
   font-family: var(--font-one), "Roboto", sans-serif;
   font-size: 24px;
 }
-.member a{
+.carousel-dot {
   cursor: pointer;
   width: 10px;
 }
 
-.carousel-dot.active{
-  opacity: 1;
+.dot.active {
+  background: #fff;
 }
-.carousel-dot:hover{
+.crew-list a:hover {
   opacity: 50.01%;
 }
-.crew-text{
+.crew-text {
   text-align: center;
 }
 
@@ -419,30 +423,29 @@ color: #383b4b;
     margin: 5rem auto 3rem auto;
     width: 80%;
   }
-  .crew-list{
+  .crew-list {
     width: 10%;
     order: 3;
     margin: 4rem auto;
   }
-  
-  .crew-desc{
+  .crew-desc {
     flex-direction: column-reverse;
   }
   .crew-img {
     width: 456.37px;
     height: auto;
   }
-  .crew-designation{
+  .crew-designation {
     gap: 1rem;
   }
-  .position{
+  .position {
     font-size: 24px;
   }
-  .name{
+  .name {
     font-size: 40px;
     margin-bottom: 2rem;
   }
-  .crew-line{
+  .crew-line {
     display: none;
   }
 }
@@ -549,50 +552,53 @@ color: #383b4b;
   .avg-distance-box {
     flex: 30%;
   }
-  .destination{
+  .destination {
     height: 75vh;
   }
-  .crew{
+  .crew {
     margin-top: 0;
   }
-  .crew-desc{
+  .crew-desc {
     flex-direction: row-reverse;
+    margin-top: 0;
   }
-  .crew-line{
+  .crew-line {
     display: none;
   }
-  .crew-container, .crew-details{
+  .crew-container,
+  .crew-details {
     flex: 50%;
   }
- 
-  .crew-text{
+
+  .crew-text {
     text-align: left;
     margin-left: 10%;
   }
-  .crew-designation{
+  .crew-designation {
     align-items: flex-start;
     margin-left: 10%;
     margin-top: -7%;
     gap: 2rem;
   }
-  
-  .crew-list{
+  .crew-details {
+    margin-top: 10%;
+  }
+  .crew-list {
     order: 3;
     margin: 6rem 0 3rem 11%;
   }
-  .position{
+  .position {
     font-size: 32px;
   }
-  .name{
+  .name {
     font-size: 56px;
     margin-bottom: 2rem;
     line-height: 64.18px;
   }
-  .crew-img{
+  .crew-img {
     width: 450px;
     height: auto;
     margin-top: -11%;
     margin-left: 15%;
   }
- 
 }
