@@ -61,6 +61,46 @@ function changeBackground(){
       document.getElementById("background-img").src = "./assets/crew/background-crew-desktop.jpg";
     }
   }
+  if(url === 'technology-vehicle.html' || url === 'technology-spaceport.html' || url === 'technology-capsule.html'){
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      document.getElementById("background-img").src = "./assets/technology/background-technology-mobile.jpg";
+    } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
+      document.getElementById("background-img").src = "./assets/technology/background-technology-tablet.jpg";
+    }
+    else{
+      document.getElementById("background-img").src = "./assets/technology/background-technology-desktop.jpg";
+    }
+  }
+  if(url === 'technology-vehicle.html'){
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      document.getElementsByClassName("tech-img").src = "./assets/technology/image-launch-vehicle-landscape.jpg";
+    } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
+      document.getElementsByClassName("tech-img").src = "./assets/technology/image-launch-vehicle-landscape.jpg";
+    }
+    else{
+      document.getElementsByClassName("tech-img").src = "./assets/technology/image-launch-vehicle-portrait.jpg"
+    }
+  }
+  if(url === 'technology-spaceport.html'){
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      document.getElementsByClassName("tech-img").src = "./assets/technology/image-spaceport-landscape.jpg";
+    } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
+      document.getElementsByClassName("tech-img").src = "./assets/technology/image-spaceport-landscape.jpg";
+    }
+    else{
+      document.getElementsByClassName("tech-img").src = "./assets/technology/image-spaceport-portrait.jpg"
+    }
+  }
+  if(url === 'technology-capsule.html'){
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      document.getElementsByClassName("tech-img").src = "./assets/technology/image-space-capsule-landscape.jpg";
+    } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
+      document.getElementsByClassName("tech-img").src = "./assets/technology/image-space-capsule-landscape.jpg";
+    }
+    else{
+      document.getElementsByClassName("tech-img").src = "./assets/technology/image-space-capsule-portrait.jpg"
+    }
+  }
 
 }
 document.addEventListener("DOMContentLoaded",changeBackground)
