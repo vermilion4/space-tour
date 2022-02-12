@@ -347,7 +347,7 @@ img {
 }
 
 /* TECHNOLOGY */
-.tech{
+.tech {
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
@@ -356,37 +356,35 @@ img {
   width: 100%;
   height: auto;
 }
-.tech-list{
+.tech-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
   margin: 2rem 0;
 }
-.tech-slider{
+.tech-slider {
   width: 40px;
   height: 40px;
-
 }
-.tech-slider a{
+.tech-slider a {
   text-decoration: none;
   border-radius: 100%;
   width: 100%;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   border: 1px solid #ffffff38;
- 
 }
 
-.tech-slider a.active{
-  background-color: #FFF;
+.tech-slider a.active {
+  background-color: #fff;
   color: var(--dark-background);
 }
-.tech-slider a:hover{
+.tech-slider a:hover {
   border: 1px solid #ffffff;
 }
-.term{
+.term {
   color: var(--subhead-color);
   text-transform: uppercase;
   font-size: 14px;
@@ -490,13 +488,13 @@ img {
   .crew-line {
     display: none;
   }
-  .term{
+  .term {
     font-size: 16px;
   }
-  .tech-title{
+  .tech-title {
     margin-bottom: 2rem;
   }
-  .tech-list{
+  .tech-list {
     margin: 4rem 0;
   }
 }
@@ -597,7 +595,8 @@ img {
     margin-left: 0;
     width: 70%;
   }
-  .travel-details, .tech-desc {
+  .travel-details,
+  .tech-desc {
     display: flex;
   }
   .avg-distance-box {
@@ -654,41 +653,39 @@ img {
     margin-top: -11%;
     margin-left: 15%;
   }
-  .tech-desc{
+  .tech-desc {
     flex-direction: row-reverse;
     gap: 1rem;
   }
-  .tech-details{
+  .tech-details {
     display: flex;
     margin-left: 5%;
     align-items: center;
   }
-  .tech-list{
+  .tech-list {
     flex-direction: column;
   }
-  .tech-slider{
+  .tech-slider {
     width: 80px;
     height: 80px;
     border-radius: 100%;
   }
-  .tech-slider a{
+  .tech-slider a {
     text-decoration: none;
     border-radius: 100%;
     width: 100%;
     padding: 1.7rem 2.2rem;
     text-align: center;
-    color: #FFF;
+    color: #fff;
     border: 1px solid #ffffff38;
-   
   }
-  .tech-container{
+  .tech-container {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
   }
-  .tech-img{
+  .tech-img {
     width: 100%;
     aspect-ratio: 1/1;
   }
-
 }
