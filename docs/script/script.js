@@ -30,7 +30,7 @@ var urlHead = window.location.href.split('/')[3];
 
 
 window.addEventListener("resize", changeBackground)
-console.log(url)
+console.log( window.location.href)
 function changeBackground(){
   if(urlHead === 'space-tour' && url === '' || url === 'index.html' || url === 'index.html#'){
     if (window.matchMedia("(max-width: 767px)").matches) {
