@@ -31,7 +31,7 @@ var url = window.location.href.split('/')[4];
 window.addEventListener("resize", changeBackground)
 console.log(url)
 function changeBackground(){
-  if(url === ' ' || url === 'index.html' || url === 'index.html#'){
+  if(url === '' || url === 'index.html' || url === 'index.html#'){
     if (window.matchMedia("(max-width: 767px)").matches) {
       document.getElementById("background-img").src = "./assets/home/background-home-mobile.jpg";
     } else if(window.matchMedia("(min-width: 768px) and (max-width: 1151.9px)").matches) {
