@@ -29,7 +29,7 @@ var url = window.location.href.split('/')[4];
 
 
 window.addEventListener("resize", changeBackground)
-
+console.log(url)
 function changeBackground(){
   if(url === '/' || url === 'index.html' || url === 'index.html#'){
     if (window.matchMedia("(max-width: 767px)").matches) {
